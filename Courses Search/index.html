@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="normalize.css" media="screen">
+    <link rel="stylesheet" href="resets.css" media="screen">
+    <link rel="stylesheet" href="styles.css" media="screen">
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="page-content">
+        <div class="card" id="about">
+            <div class="about-content">
+                <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                <div class="about-text">
+                    <p class="card-header">About</p>
+                    <p class="card-body">
+                        Welcome to my portfolio! I am passionate about IT and continuously learning new technologies.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="card" id="education">
+            <p class="card-header">Education</p>
+            <p class="card-body">Currently pursuing a degree in Information Technology.</p>
+        </div>
+        <div class="card" id="skills">
+            <p class="card-header">Skills</p>
+            <p class="card-body">Proficient in HTML, JavaScript, React, and Database Management.</p>
+        </div>
+        <div class="card" id="portfolio">
+            <p class="card-header">Portfolio</p>
+            
+
+            <!-- Activity Section -->
+            <section id="activity">
+                <h2>GitHub Activities</h2>
+                <div class="projects">
+                    <div class="project-card">
+                        <h4>HTML5 Activity</h4>
+                        <a href="https://jayrille.github.io/HTML5_ACTIVITY/" target="_blank" class="btn">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <h4>CSS Activity</h4>
+                        <a href="https://jayrille.github.io/CSS_ACTIVITY/" target="_blank" class="btn">View Project</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="card" id="courses">
+            <p class="card-header">Courses Taken</p>
+            <div class="card-body">
+                <table border="1">
+                    <thead>
+                        <tr>
+                            <th>Year Level</th>
+                            <th>Semester</th>
+                            <th>Course Code</th>
+                            <th>Description</th>
+                            <th>Credits</th>
+                        </tr>
+                    </thead>
+                    <tbody id="courses-list">
+                        <!-- JavaScript will insert rows here -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

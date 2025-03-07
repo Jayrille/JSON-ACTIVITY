@@ -1,0 +1,200 @@
+/* Reset CSS - Removes default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensures the body takes the full width and height */
+html, body {
+    width: 100%;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+/* Removes default list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Ensures links don't have default underline */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Resetting default button styles */
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* Table reset */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Images should not overflow */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Reset input fields */
+input, textarea {
+    border: none;
+    outline: none;
+    font: inherit;
+}
+
+/* Existing styles below (unchanged) */
+
+.page-content {
+    padding-top: 30px;
+    overflow: hidden;
+}
+
+.card {
+    border: 3px solid teal;
+    border-radius: 5px;
+    width: 70%;
+    margin: 3% auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background: white;
+    padding: 15px;
+}
+
+.card-header {
+    padding: 1%;
+    font-size: 20px;
+    font-weight: 700;
+    border-bottom: 2px solid rgb(192, 192, 192);
+    text-align: center;
+}
+
+.card-body {
+    padding: 5%;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.nav {
+    background-color: teal;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Courses Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: teal;
+    color: white;
+}
+
+/* Portfolio Section */
+#activity {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#activity h2 {
+    color: #008080;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Project Cards */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+    width: 200px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    background-color: #008080;
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #006666;
+}
+
+/* About Section Styling */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Space between image and text */
+    padding: 10px;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid teal;
+}
+
+/* Ensure text aligns properly */
+.about-text {
+    flex: 1;
+}

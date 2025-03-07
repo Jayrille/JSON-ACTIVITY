@@ -20,3 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch(error => console.error("Error loading courses:", error));
 });
+
+// Function to filter courses dynamically
+function filterSubjects() {
+    let input = document.getElementById("search-box").value.toLowerCase();
+    let rows = document.querySelectorAll("#courses-list tr");
+
+    rows.forEach(row => {
+        let description = row.cells[3].innerText.toLowerCase(); // Get course description
+        row.style.display = description.includes(input) ? "" : "none"; // Show or hide row
+    });
+}

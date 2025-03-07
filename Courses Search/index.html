@@ -40,7 +40,6 @@
         </div>
         <div class="card" id="portfolio">
             <p class="card-header">Portfolio</p>
-            
 
             <!-- Activity Section -->
             <section id="activity">
@@ -61,6 +60,11 @@
         <div class="card" id="courses">
             <p class="card-header">Courses Taken</p>
             <div class="card-body">
+                <!-- Search Box for Filtering Courses -->
+                <div class="search-container">
+                    <input type="text" id="search-box" placeholder="Search subjects..." onkeyup="filterSubjects()">
+                </div>
+
                 <table border="1">
                     <thead>
                         <tr>
